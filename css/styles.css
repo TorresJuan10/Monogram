@@ -1,0 +1,143 @@
+:root {
+    --azulfuerte: #1a2456;
+    --salmon: #ff8b68;
+    --salmon2: #f5cabd;
+    --blanco: #f0efed;
+    --alternativo: #080b1b;
+} 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url(/assets/images/fondoprincipal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 115vh;
+}
+
+.nav_header {
+    
+    background-color: var(--azulfuerte);
+    position: relative;
+    top: 1rem;
+    max-width: 100%;
+    margin: 0 1rem;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    align-items: center;
+    
+}
+
+ .logo {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 1rem;
+} 
+
+.logoimg {
+    width: 60px;
+    filter: invert(1);
+}
+
+.logo_texto {
+    color: var(--salmon2);
+    font-size: 20px;
+    font-family: monospace;
+
+}
+
+ul, li, a {
+    text-decoration: none;
+    color: var(--salmon2);
+    list-style-type: none;
+    display:flex;
+    gap: 3.5rem;
+    font-size: 14px;
+    font-family: monospace;
+
+}
+
+.header_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10rem;
+    color: var(--salmon2);
+    font-family: monospace;
+    font-size: 22px;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.header_info_arrow {
+    margin-top: 8rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.arrow {
+    filter: invert(1);
+    width: 90px;
+   
+}
+
+/* MAIN */
+
+/* CONTENIDO PRINCIPAL */
+
+ .grid-contenido-principal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 4rem;
+}
+
+
+
+.elemento5 {
+    
+    grid-column: 1 / -1; /* Ocupa desde la primera columna hasta la última */
+    height: auto;
+    
+}
+
+.monogram-img {
+    height: 530px !important; 
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.grid-contenido-principal img {
+    max-width: 100%;
+    height: auto; 
+}
+
+.elemento_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    justify-content: space-between;
+    width: 100%;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+
